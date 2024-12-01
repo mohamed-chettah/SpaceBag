@@ -6,7 +6,7 @@
       <div class="relative col-span-full mt-28 lg:col-span-1">
         <div class="flex flex-col items-center justify-center lg:items-start">
           <h1
-              class="w-full text-center font-sans text-4xl font-semibold  leading-10 from-teal-400 to-blue-500 sm:text-5xl md:w-10/12 lg:w-full lg:text-left lg:text-6xl dark:text-dark-100"
+              class="w-full text-center font-sans text-4xl font-semibold leading-10  bg-gradient-to-r from-tumbleweed-900 via-tumbleweed-500 to-tumbleweed-200 bg-clip-text text-transparent sm:text-5xl md:w-10/12 lg:w-full lg:text-left lg:text-6xl dark:text-dark-100"
           >
             Compactez vos affaires Libérez de l'espace
           </h1>
@@ -18,7 +18,7 @@
           <div
               class="mt-4 flex w-full flex-col-reverse items-center justify-center gap-4 lg:flex-row-reverse lg:justify-end"
           >
-            <UButton variant="solid" to="#" size="lg" class="text-white">
+            <UButton variant="solid" to="#" size="lg" class="text-white bg-[#CD8F6A]">
               Acheter maintenant
             </UButton>
           </div>
