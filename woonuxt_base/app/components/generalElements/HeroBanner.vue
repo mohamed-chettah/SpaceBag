@@ -6,7 +6,7 @@
       <div class="relative col-span-full mt-28 lg:col-span-1">
         <div class="flex flex-col items-center justify-center lg:items-start">
           <h1
-              class="w-full text-center font-sans text-4xl font-semibold  leading-10 text-dark-900 sm:text-5xl md:w-10/12 lg:w-full lg:text-left lg:text-6xl dark:text-dark-100"
+              class="w-full text-center font-sans text-4xl font-semibold  leading-10 from-teal-400 to-blue-500 sm:text-5xl md:w-10/12 lg:w-full lg:text-left lg:text-6xl dark:text-dark-100"
           >
             Compactez vos affaires Libérez de l'espace
           </h1>

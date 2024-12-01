@@ -40,8 +40,7 @@
     >
       <NuxtImg
           class="h-full w-full object-cover object-center"
-          src="https://images.unsplash.com/photo-1570675894641-8860d49afece?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      />
+          src="/images/spacebag/image_Gbt.png"     />
     </div>
   </div>
 </template>
