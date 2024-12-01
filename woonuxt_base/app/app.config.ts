@@ -5,8 +5,8 @@
  */
 export default defineAppConfig({
   siteName: 'SpaceBag',
-  shortDescription: 'This is an example of a WooNuxt store. It provides a modern, fast, and SEO friendly ecommerce store built with Nuxt and WooCommerce.',
-  description: `WooNuxt is unmatched when it comes to performance and scalability. Reap the benefits of having a online store that out performs all of your competitors. You can edit components to display your own information just like the one you're reading now.`,
+  shortDescription: 'Le SpaceBag révolutionne vos déplacements avec sa technologie de compression et son design élégant.',
+  description: `Le SpaceBag est conçu pour les voyageurs modernes en quête de praticité et de style. Grâce à sa technologie de compression avancée, ce sac vous permet de gagner de la place tout en restant organisé. Fabriqué avec des matériaux robustes et un design ergonomique, il offre une expérience unique pour tous vos déplacements, qu'ils soient professionnels ou personnels. Transformez vos voyages avec le SpaceBag dès aujourd'hui.`,
   baseUrl: 'https://v3.woonuxt.com',
   siteImage: 'https://user-images.githubusercontent.com/5116925/218879668-f4c1f9fd-bef4-44b0-bc7f-e87d994aa3a1.png',
   storeSettings: {
@@ -17,8 +17,8 @@ export default defineAppConfig({
     showSKU: true,
     showRelatedProducts: true,
     showProductCategoriesOnSingleProduct: true,
-    showBreadcrumbOnSingleProduct: true,
-    showMoveToWishlist: true,
+    showBreadcrumbOnSingleProduct: false,
+    showMoveToWishlist: false,
     hideBillingAddressForVirtualProducts: false,
     initStoreOnUserActionToReduceServerLoad: true,
     saleBadge: 'percent', // 'percent', 'onSale' or 'hidden'

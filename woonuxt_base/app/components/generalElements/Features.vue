@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="container grid gap-4 pt-32 pb-4 xl:pt-24 md:grid-cols-2 lg:grid-cols-4">
+  <section class="container grid gap-4 md:grid-cols-2 lg:grid-cols-4">
     <div class="flex items-center gap-8 p-8 bg-white rounded-lg">
       <img src="/icons/box.svg" width="60" height="60" alt="Livraison gratuite" loading="lazy" />
       <div>

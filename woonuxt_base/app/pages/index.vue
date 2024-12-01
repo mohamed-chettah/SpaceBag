@@ -19,7 +19,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <main>
+  <main class="flex flex-col gap-40">
     <HeroBanner />
 
     <SliderDestination />
@@ -27,6 +27,10 @@ useSeoMeta({
     <Features />
 
     <About />
+
+    <FaqSection />
+
+    <LastCta />
 
   </main>
 </template>

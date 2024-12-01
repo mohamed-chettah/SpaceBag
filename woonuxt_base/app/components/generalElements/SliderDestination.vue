@@ -1,6 +1,6 @@
 <template>
   <div
-      class="relative flex h-full min-h-dvh w-full flex-col items-center justify-center bg-dark-50 pt-32 pb-4 xl:pt-24 dark:bg-dark-950"
+      class="relative flex h-full min-h-dvh w-full flex-col items-center justify-center bg-dark-50 dark:bg-dark-950"
   >
     <div class="relative z-20 grid w-full grid-cols-12 gap-y-12 md:gap-y-24">
       <div class="col-span-full flex flex-col items-start justify-center px-4">
