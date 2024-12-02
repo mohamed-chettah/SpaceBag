@@ -7,7 +7,7 @@ const activeTab = computed(() => route.query.tab || 'my-details');
 const showLoader = computed(() => !cart.value && !viewer);
 
 useSeoMeta({
-  title: `My Account`,
+  title: `Mon Compte`,
 });
 </script>
 

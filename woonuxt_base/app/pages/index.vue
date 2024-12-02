@@ -19,8 +19,12 @@ useSeoMeta({
 </script>
 
 <template>
-  <main class="flex flex-col gap-40">
+  <main class="flex flex-col gap-32">
     <HeroBanner />
+
+    <WhySpacebag />
+
+    <AdvancedCard image="/images/spacebag/vaccuum.png" alt="aspirateur pour sac" smallTitle="Aspiration" title="Aspirez l'air, gagnez de l'espace" description="L'aspirateur intégré au SpaceBag utilise une technologie puissante pour retirer l'air de vos vêtements, réduisant leur volume de manière significative. Il permet un rangement optimisé et protège vos affaires pendant vos voyages." smallDescription="Une solution compacte et révolutionnaire pour tous vos déplacements." />
 
     <SliderDestination />
 
