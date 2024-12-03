@@ -28,8 +28,7 @@ const items = [{
 
 <template>
 
-  <div class="">
-
+  <div class="bg-black/90 pt-20">
 
     <div class="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl top-[2500px] " aria-hidden="true">
       <div class="relative left-[calc(50%+3rem)] w-[36.125rem]
@@ -78,8 +77,6 @@ const items = [{
             </template>
 
             <span class="truncate whitespace-normal">{{ item.label }}</span>
-
-
             <template #trailing>
               <UIcon
                   name="i-heroicons-chevron-right-20-solid"
