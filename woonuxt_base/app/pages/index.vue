@@ -48,11 +48,13 @@ useSeoMeta({
 
     <SliderDestination />
 
+    <About />
+
     <Features />
 
-    <div>
-      <About />
+    <CoverCard />
 
+    <div>
       <FaqSection />
     </div>
 

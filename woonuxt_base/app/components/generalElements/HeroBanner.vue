@@ -18,7 +18,7 @@
           <div
               class="mt-4 flex w-full flex-col-reverse items-center justify-center gap-4 lg:flex-row-reverse lg:justify-end"
           >
-            <UButton variant="solid" to="https://space-bag.vercel.app/product/space-bag" size="lg" class="text-white bg-[#CD8F6A]">
+            <UButton variant="solid" to="/product/space-bag" size="lg" class="text-white bg-[#CD8F6A]">
               Acheter maintenant
             </UButton>
           </div>

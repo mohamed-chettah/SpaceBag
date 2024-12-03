@@ -96,7 +96,6 @@ const disabledAddToCart = computed(() => {
             <div class="flex-1">
               <h1 class="flex flex-wrap items-center gap-2 mb-2 text-2xl font-sesmibold">
                 {{ type.name }}
-                <LazyWPAdminLink :link="`/wp-admin/post.php?post=${product.databaseId}&action=edit`">Edit</LazyWPAdminLink>
               </h1>
               <StarRating :rating="product.averageRating || 0" :count="product.reviewCount || 0" v-if="storeSettings.showReviews" />
             </div>
@@ -155,10 +154,6 @@ const disabledAddToCart = computed(() => {
       </div>
       <div v-if="product.description || product.reviews" class="my-32">
         <ProductTabs :product />
-      </div>
-      <div class="my-32" v-if="product.related && storeSettings.showRelatedProducts">
-        <div class="mb-4 text-xl font-semibold">{{ $t('messages.shop.youMayLike') }}</div>
-        <ProductRow :products="product.related.nodes" class="grid-cols-2 md:grid-cols-4 lg:grid-cols-5" />
       </div>
     </div>
   </main>

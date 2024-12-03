@@ -1,10 +1,9 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
   <div class="xl:grid xl:grid-cols-2 h-full grid-cols-1 ">
-    <div class="flex justify-center items-center rounded-none bg-[#CD8F6A] xl:p-0 p-20">
+    <div class="flex justify-center items-center rounded-none bg-[#CD8F6A] xl:py-0 py-20 xl:p-0 p-10 ">
       <p class="text-white text-center xl:text-xl text-wrap leading-7 tracking-wide xl:px-20 px-10">
         Que vous partiez à l’aventure dans les montagnes,
         travailliez depuis un café ou embarquiez pour un week-end à
@@ -17,7 +16,6 @@
         loading="lazy"
         alt="my-company-hero-image"/>
   </div>
-
 </template>
 
 <style scoped lang="postcss">
