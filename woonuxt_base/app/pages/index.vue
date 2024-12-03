@@ -1,15 +1,8 @@
 <script lang="ts" setup>
-import { ProductsOrderByEnum } from '#woo';
 const { siteName, description, shortDescription, siteImage } = useAppConfig();
 
-const { data } = await useAsyncGql('getProductCategories', { first: 6 });
-const productCategories = data.value?.productCategories?.nodes || [];
-
-const { data: productData } = await useAsyncGql('getProducts', { first: 5, orderby: ProductsOrderByEnum.POPULARITY });
-const popularProducts = productData.value.products?.nodes || [];
-
 useSeoMeta({
-  title: `Home`,
+  title: `Accueil`,
   ogTitle: siteName,
   description: description,
   ogDescription: shortDescription,
@@ -35,7 +28,6 @@ useSeoMeta({
         description="Le SpaceBag est conçu pour une utilisation simple et intuitive. Grâce à son aspirateur intégré, il réduit le volume de vos vêtements en un rien de temps, vous permettant de gagner de l'espace de manière efficace sans effort supplémentaire."
         smallDescription="Profitez d'une solution facile à utiliser et idéale pour des voyages sans encombre."
     />
-
 
     <AdvancedCard
         image="/images/spacebag/water.png"

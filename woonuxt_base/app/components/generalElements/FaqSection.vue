@@ -1,26 +1,31 @@
 <script setup lang="ts">
 
-const items = [{
-  label: 'Quels services offrons-nous exactement ?',
-  icon: 'i-heroicons-question-mark-circle',
-  defaultOpen: true,
-  content: 'MC Studio dispose d’une expertise dans une gamme complète de services tels que la création de design, le développement d’applications et de site web et se charge de l’ensemble de la gestion, création et déploiement du projet. '
-},
+const items = [
   {
-    label: 'Que se passe-t-il si le design \n' + 'ne correspond pas à vos attentes ?',
-    icon: 'i-heroicons-paint-brush-20-solid',
-    content: "Pas d'inquiétude ! Nous révisons le design et apportons les ajustements nécessaires jusqu'à ce que vous soyez pleinement satisfait."
+    label: 'Qu\'est-ce que le Space Bag ?',
+    icon: 'i-heroicons-question-mark-circle',
+    defaultOpen: true,
+    content: 'Le Space Bag est un sac conçu pour optimiser l\'espace lors de vos voyages grâce à un aspirateur vacuum intégré, permettant de réduire considérablement le volume de vos affaires.'
   },
   {
-    label: 'Quelles technologies utilisons-nous \n' + 'pour développer vos projets ?',
-    icon: 'i-heroicons-cog-8-tooth-20-solid',
-    content: 'Nous utilisons les technologies les plus récentes pour garantir des solutions modernes et performantes. Nos sites web sont développés avec Nuxt.js pour le framework, Tailwind CSS pour le design et la mise en page, et GSAP pour les animations. Pour les applications, nous nous appuyons sur Laravel pour le backend et sur Nuxt/Vue.js pour le frontend.'
+    label: 'Comment fonctionne l\'aspirateur vacuum intégré ?',
+    icon: 'i-heroicons-square-3-stack-3d',
+    content: 'L\'aspirateur vacuum est simple à utiliser. Placez vos vêtements dans le Space Bag, fermez le sac hermétiquement, puis utilisez l\'aspirateur pour retirer l\'air. Cela compresse les vêtements et libère de l\'espace dans vos bagages.'
   },
   {
-    label: 'Quel est le coût d’un projet ?',
-    icon: 'i-mdi-square-inc-cash',
-    content: 'Le prix d’un projet dépend de vos besoins, du temps nécessaire pour le développer et sa complexité.\n' +
-        'Le devis est établi après une discussion téléphonique. Celui-ci sera toujours juste et personnalisé. Seuls les services dont vous avez besoin vous seront facturés.'
+    label: 'Quels types d\'affaires puis-je compresser avec le Space Bag ?',
+    icon: 'i-heroicons-briefcase-solid',
+    content: 'Vous pouvez compresser une grande variété de vêtements, comme des pulls, des vestes, des pantalons, et même des draps. Toutefois, il est déconseillé de compresser des articles délicats ou en cuir.'
+  },
+  {
+    label: 'Est-ce que le Space Bag protège les vêtements de l\'humidité ?',
+    icon: 'i-heroicons-shield-check-solid',
+    content: 'Oui, le Space Bag est hermétique et protège vos vêtements de l\'humidité, de la poussière et des odeurs, garantissant que vos affaires restent propres et fraîches pendant le voyage.'
+  },
+  {
+    label: 'Quels sont les différents usages du Space Bag ?',
+    icon: 'i-heroicons-cube-transparent',
+    content: 'Le Space Bag est idéal pour les voyages, le rangement à domicile, et même pour le stockage saisonnier de vêtements volumineux. Que vous souhaitiez gagner de la place dans vos valises, organiser votre placard ou protéger vos affaires de l\'humidité et de la poussière, le Space Bag est une solution polyvalente.'
   }
 ];
 
@@ -36,13 +41,13 @@ const items = [{
           src="/images/spacebag/affaire.png"
           loading="lazy"
           alt="affaires posé au sol"/>
-      <div class="mx-20">
-        <h3 class="text-[#C3C3C3]">FAQ</h3>
+      <div class="mx-20 xl:pb-0 pb-20">
+        <h3 class="text-[#C3C3C3] text-2xl xl:mt-0 mt-10">FAQ</h3>
         <UAccordion
             color="primary"
             variant="soft"
             size="md"
-            class="mt-5"
+            class="my-10"
             :items="items"  />
       </div>
 

@@ -8,7 +8,7 @@
   >
     <!-- Background Image -->
     <NuxtImg
-        class="absolute h-full w-full object-cover object-[right_-14rem_top_0rem] md:object-center"
+        class="absolute h-full w-full object-cover"
         src="/images/spacebag/banniere-bateau.png"
         loading="lazy"
         alt="my-hero-background"

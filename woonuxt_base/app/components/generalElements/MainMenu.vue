@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <nav class="xl:text-white text-black">
+  <nav class="lg:text-white text-black">
     <NuxtLink class="" to="/">{{ $t('messages.general.home') }}</NuxtLink>
     <NuxtLink class="" to="/product/space-bag">The SpaceBag</NuxtLink>
     <NuxtLink class="" to="/contact">{{ $t('messages.general.contact') }}</NuxtLink>

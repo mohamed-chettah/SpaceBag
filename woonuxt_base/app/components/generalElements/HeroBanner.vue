@@ -1,7 +1,7 @@
 <template>
   <div class="relative h-auto w-full bg-white">
     <div
-        class="2xl:max-w-screen-2xl mx-auto grid h-full min-h-dvh w-full grid-cols-2 items-center justify-center gap-4 px-4"
+        class="2xl:max-w-screen-2xl mx-auto grid h-full min-h-dvh w-full grid-cols-2 items-center justify-center gap-4 px-20"
     >
       <div class="relative col-span-full mt-28 lg:col-span-1">
         <div class="flex flex-col items-center justify-center lg:items-start">
