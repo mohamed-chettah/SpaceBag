@@ -78,7 +78,7 @@ const disabledAddToCart = computed(() => {
 </script>
 
 <template>
-  <main class="container relative py-6 xl:max-w-7xl">
+  <main class="relative py-10 ">
     <div v-if="product">
 <!--      <SEOHead :info="product" />-->
       <div class="flex flex-col gap-10 md:flex-row md:justify-between lg:gap-24">
@@ -94,15 +94,15 @@ const disabledAddToCart = computed(() => {
         <div class="lg:max-w-md xl:max-w-lg md:py-2 w-full">
           <div class="flex justify-between mb-4">
             <div class="flex-1">
-              <h1 class="flex flex-wrap items-center gap-2 mb-2 text-2xl font-sesmibold">
+              <h1 class="flex flex-wrap items-center gap-2 mb-2 text-2xl font-semibold">
                 {{ type.name }}
               </h1>
-              <StarRating :rating="product.averageRating || 0" :count="product.reviewCount || 0" v-if="storeSettings.showReviews" />
+<!--              <StarRating :rating="product.averageRating || 0" :count="product.reviewCount || 0" v-if="storeSettings.showReviews" />-->
             </div>
             <ProductPrice class="text-xl" :sale-price="type.salePrice" :regular-price="type.regularPrice" />
           </div>
 
-          <div class="grid gap-2 my-8 text-sm empty:hidden">
+          <div class="grid gap-2 my-4 text-sm empty:hidden">
             <div v-if="!isExternalProduct" class="flex items-center gap-2">
               <span class="text-gray-400">{{ $t('messages.shop.availability') }}: </span>
               <StockStatus :stockStatus @updated="mergeLiveStockStatus" />
@@ -132,6 +132,7 @@ const disabledAddToCart = computed(() => {
                 v-model="quantity"
                 type="number"
                 min="1"
+                max="5"
                 aria-label="Quantity"
                 class="bg-white border rounded-lg flex text-left p-2.5 w-20 gap-4 items-center justify-center focus:outline-none" />
               <AddToCartButton class="flex-1 w-full md:max-w-xs" :disabled="disabledAddToCart" :class="{ loading: isUpdatingCart }" />
@@ -144,7 +145,6 @@ const disabledAddToCart = computed(() => {
               {{ product?.buttonText || 'View product' }}
             </a>
           </form>
-
 
           <div class="flex flex-wrap gap-4">
             <WishlistButton :product />

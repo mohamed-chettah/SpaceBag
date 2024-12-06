@@ -43,7 +43,7 @@ const imgWidth = 640;
   <div>
     <SaleBadge :node class="absolute text-base top-4 right-4" />
     <NuxtImg
-      class="rounded-xl object-contain w-full min-w-[350px]"
+      class="rounded-lg w-full h-[80%] object-cover"
       :width="imgWidth"
       :height="imgWidth"
       :alt="imageToShow.altText || node.name"
