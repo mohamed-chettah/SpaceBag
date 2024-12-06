@@ -18,7 +18,7 @@
           <div
               class="mt-4 flex w-full flex-col-reverse items-center justify-center gap-4 lg:flex-row-reverse lg:justify-end"
           >
-            <UButton variant="solid" to="/product/space-bag" size="lg" class="text-white bg-[#CD8F6A]">
+            <UButton variant="solid" to="/product/space-bag" size="lg" class="text-white dark:text-white bg-[#CD8F6A]">
               Acheter maintenant
             </UButton>
           </div>
@@ -26,7 +26,7 @@
       </div>
       <div class="relative col-span-full mt-4 lg:col-span-1">
         <NuxtImg
-            class="max-h-[420px] w-full rounded-lg object-cover object-center lg:max-h-[720px]"
+            class="xl:mb-0 mb-10 max-h-[420px] w-full rounded-lg object-cover object-center lg:max-h-[720px]"
             src="/images/spacebag/image_TLY.png"
             loading="lazy"
             alt="my-company-hero-image"

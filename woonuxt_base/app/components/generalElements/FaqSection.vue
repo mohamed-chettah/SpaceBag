@@ -41,10 +41,14 @@ const items = [
           src="/images/spacebag/affaire.png"
           loading="lazy"
           alt="affaires posé au sol"/>
-      <div class="mx-20 xl:pb-0 pb-20">
+      <div class="xl:mx-20 mx-5 xl:pb-0 pb-20">
         <h3 class="text-[#C3C3C3] text-2xl xl:mt-0 mt-10">FAQ</h3>
         <UAccordion
             color="primary"
+            :ui="{   default : {
+              class :  'tracking-wide lg:text-sm text-xs text-white bg-white-500',
+              base : 'tracking-wide font-bold leading-6',
+              item : { color : 'text-white dark:text-white',   size : 'lg:text-[16px] text-xs'}}}"
             variant="soft"
             size="md"
             class="my-10"

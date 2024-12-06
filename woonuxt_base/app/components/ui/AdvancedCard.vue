@@ -18,7 +18,7 @@ const props = defineProps({
         <h3 class="text-[#C3C3C3]">{{ smallTitle }}</h3>
         <h4 class="xl:text-3xl text-2xl  font-serif">{{ title }}</h4>
         <p>{{ description }}</p>
-        <div class="bg-primary/50 p-6 text-sm rounded-md mt-5 ">
+        <div class="bg-primary/30 p-6 text-sm rounded-md mt-5 ">
           <p>{{ smallDescription }}</p>
         </div>
       </div>

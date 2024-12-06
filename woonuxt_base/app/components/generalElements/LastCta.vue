@@ -27,7 +27,7 @@
               to="#"
               color="white"
               variant="soft"
-              class="px-6 bg-white"
+              class="px-6 bg-white hover:bg-white/80"
               size="lg"
           >
             Prenez votre SpaceBag maintenant

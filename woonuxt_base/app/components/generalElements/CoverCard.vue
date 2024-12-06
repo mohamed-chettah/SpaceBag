@@ -34,7 +34,7 @@
               size="md"
               type="solid"
               color="primary"
-              class="flex items-center justify-center gap-6 rounded-md"
+              class="flex items-center justify-center gap-6 rounded-md dark:text-white"
               aria-label="Explore our proposals"
           >
             Passer à l'action
