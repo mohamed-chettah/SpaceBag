@@ -78,10 +78,10 @@ const disabledAddToCart = computed(() => {
 </script>
 
 <template>
-  <main class="relative py-10 ">
+  <main class="relative py-10 xl:px-20 px-10 ">
     <div v-if="product">
 <!--      <SEOHead :info="product" />-->
-      <div class="flex flex-col gap-10 md:flex-row md:justify-between lg:gap-24">
+      <div class="flex flex-col gap-10 md:flex-row md:justify-between lg:gap-16">
         <ProductImageGallery
           v-if="product.image"
           class="relative flex-1"
@@ -97,6 +97,7 @@ const disabledAddToCart = computed(() => {
               <h1 class="flex flex-wrap items-center gap-2 mb-2 text-2xl font-semibold">
                 {{ type.name }}
               </h1>
+              <h2 class="text-gray-400 text-sm"> Sac de voyages </h2>
 <!--              <StarRating :rating="product.averageRating || 0" :count="product.reviewCount || 0" v-if="storeSettings.showReviews" />-->
             </div>
             <ProductPrice class="text-xl" :sale-price="type.salePrice" :regular-price="type.regularPrice" />
@@ -104,8 +105,8 @@ const disabledAddToCart = computed(() => {
 
           <div class="grid gap-2 my-4 text-sm empty:hidden">
             <div v-if="!isExternalProduct" class="flex items-center gap-2">
-              <span class="text-gray-400">{{ $t('messages.shop.availability') }}: </span>
-              <StockStatus :stockStatus @updated="mergeLiveStockStatus" />
+<!--              <span class="text-gray-400">{{ $t('messages.shop.availability') }}: </span>-->
+<!--              <StockStatus :stockStatus @updated="mergeLiveStockStatus" />-->
             </div>
             <div class="flex items-center gap-2" v-if="storeSettings.showSKU && product.sku">
               <span class="text-gray-400">{{ $t('messages.shop.sku') }}: </span>
@@ -113,7 +114,8 @@ const disabledAddToCart = computed(() => {
             </div>
           </div>
 
-          <div class="mb-8 font-light prose" v-html="product.shortDescription || product.description" />
+          <h4 class="text-bold text-black">Description : </h4>
+          <div class="mt-2 mb-8 font-light prose" v-html="product.shortDescription || product.description" />
 
           <hr />
 

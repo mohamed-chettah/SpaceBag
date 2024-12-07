@@ -14,15 +14,17 @@ watch(cart, (val) => {
 </script>
 
 <template>
-  <button
+  <UButton
     type="submit"
-    class="rounded-lg flex font-bold bg-gray-800 text-white text-center min-w-[150px] p-2.5 gap-4 items-center justify-center focus:outline-none"
+    color="primary"
+    size="lg"
+    class="rounded-lg flex font-bold focus:outline-none py-2.5 px-0.5 w-10 gap-4 items-center justify-center "
     :class="{ disabled: disabled }"
     :disabled="disabled"
     @click="isLoading = true">
-    <span>{{ addToCartButtonText }}</span>
+    <span class="text-white text-center">{{ addToCartButtonText }}</span>
     <LoadingIcon v-if="isLoading" stroke="4" size="12" color="#fff" />
-  </button>
+  </UButton>
 </template>
 
 <style lang="postcss" scoped>

@@ -18,7 +18,6 @@ const primaryImage = computed(() => ({
 const imageToShow = ref(primaryImage.value);
 
 const galleryImages = computed(() => {
-  // Add the primary image to the start of the gallery and remove duplicates
   return [primaryImage.value, ...props.gallery.nodes].filter((img, index, self) => index === self.findIndex((t) => t?.databaseId === img?.databaseId));
 });
 
@@ -40,10 +39,27 @@ const imgWidth = 640;
 </script>
 
 <template>
-  <div>
+
+  <div class="flex xl:flex-row flex-col gap-10">
+    <div v-if="gallery.nodes.length" class="gallery-images">
+      <NuxtImg
+          v-for="galleryImg in galleryImages"
+          :key="galleryImg.databaseId"
+          class="cursor-pointer rounded-xl"
+          :class="galleryImg.databaseId === imageToShow.databaseId ? 'border-2 border-primary' : 'border-2 border-transparent'"
+          :width="imgWidth"
+          :height="imgWidth"
+          :src="galleryImg.sourceUrl"
+          :alt="galleryImg.altText || node.name"
+          :title="galleryImg.title || node.name"
+          placeholder
+          placeholder-class="blur-xl"
+          loading="lazy"
+          @click.native="changeImage(galleryImg)" />
+    </div>
     <SaleBadge :node class="absolute text-base top-4 right-4" />
     <NuxtImg
-      class="rounded-lg w-full h-[80%] object-cover"
+      class="rounded-lg w-full object-cover"
       :width="imgWidth"
       :height="imgWidth"
       :alt="imageToShow.altText || node.name"
@@ -52,29 +68,16 @@ const imgWidth = 640;
       fetchpriority="high"
       placeholder
       placeholder-class="blur-xl" />
-    <div v-if="gallery.nodes.length" class="my-4 gallery-images">
-      <NuxtImg
-        v-for="galleryImg in galleryImages"
-        :key="galleryImg.databaseId"
-        class="cursor-pointer rounded-xl"
-        :width="imgWidth"
-        :height="imgWidth"
-        :src="galleryImg.sourceUrl"
-        :alt="galleryImg.altText || node.name"
-        :title="galleryImg.title || node.name"
-        placeholder
-        placeholder-class="blur-xl"
-        loading="lazy"
-        @click.native="changeImage(galleryImg)" />
-    </div>
+
   </div>
 </template>
 
 <style scoped>
 .gallery-images {
-  display: flex;
   overflow: auto;
   gap: 1rem;
+  display: flex;
+  flex-direction: row;
 
   &::-webkit-scrollbar {
     display: none;
@@ -89,11 +92,10 @@ const imgWidth = 640;
 
 @media (min-width: 768px) {
   .gallery-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
-
+    display: flex;
+    flex-direction: column;
     img {
-      width: 100%;
+      width: 120px !important;
     }
   }
 }
