@@ -4,11 +4,11 @@
   >
     <div class="relative col-span-full md:col-span-6">
       <h2 class="text-dark-900 dark:text-dark-50 text-4xl font-bold">
-        We are here to help you
+        Nous sommes là pour vous aider
       </h2>
       <p class="text-lgfont-normal text-dark-900/60 dark:text-dark-50/60 mt-2">
-        Got questions or need assistance? Feel free to reach out to us. <br />
-        We're just a message away!
+        Vous avez des questions ou besoin d'assistance ? N'hésitez pas à nous contacter.
+        <br> Nous sommes à votre disposition pour répondre à toutes vos demandes !
       </p>
       <div class="relative mt-12 w-full">
         <UForm
@@ -18,44 +18,34 @@
             @submit="onSubmit"
         >
           <div class="col-span-full md:col-span-6">
-            <UForm label="Name" name="fullname" size="lg" required>
+            <UFormGroup label="Nom" name="fullname" size="lg" required>
               <UInput v-model="state.fullname" class="w-full" />
-            </UForm>
+            </UFormGroup>
           </div>
           <div class="col-span-full md:col-span-6">
-            <UForm label="Email" name="email" size="lg" required>
+            <UFormGroup label="Email" name="email" size="lg" required>
               <UInput v-model="state.email" type="email" class="w-full" />
-            </UForm>
-          </div>
-          <div class="col-span-full md:col-span-6">
-            <UForm label="Phone" name="phone" size="lg" required>
-              <UInput v-model="state.phone" type="tel" class="w-full" />
-            </UForm>
-          </div>
-          <div class="col-span-full md:col-span-6">
-            <UForm label="Company" name="company" size="lg" required>
-              <UInput v-model="state.company" type="text" class="w-full" />
-            </UForm>
+            </UFormGroup>
           </div>
           <div class="col-span-full">
-            <UForm label="Message" name="message" size="lg" required>
+            <UFormGroup label="Message" name="message" size="lg" required>
               <UTextarea
                   v-model="state.message"
                   :rows="6"
                   type="textarea"
                   class="w-full"
               />
-            </UForm>
+            </UFormGroup>
           </div>
           <div class="col-span-full">
-            <UForm name="agree" size="lg">
+            <UFormGroup name="agree" size="lg">
               <UCheckbox v-model="state.agree" required>
                 <template #label>
                   I agree with the
                   <ULink to="#"> privacy policy </ULink>
                 </template>
               </UCheckbox>
-            </UForm>
+            </UFormGroup>
           </div>
           <div class="col-span-full">
             <UButton block type="submit" size="lg" class="cursor-pointer">
