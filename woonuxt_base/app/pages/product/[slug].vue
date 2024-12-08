@@ -100,8 +100,10 @@ const disabledAddToCart = computed(() => {
               <h2 class="text-gray-400 text-sm"> Sac de voyages </h2>
 <!--              <StarRating :rating="product.averageRating || 0" :count="product.reviewCount || 0" v-if="storeSettings.showReviews" />-->
             </div>
-            <ProductPrice class="text-xl" :sale-price="type.salePrice" :regular-price="type.regularPrice" />
+            <WishlistButton :product />
           </div>
+
+          <ProductPrice class="text-xl" :sale-price="type.salePrice" :regular-price="type.regularPrice" />
 
           <div class="grid gap-2 my-4 text-sm empty:hidden">
             <div v-if="!isExternalProduct" class="flex items-center gap-2">
@@ -148,15 +150,14 @@ const disabledAddToCart = computed(() => {
             </a>
           </form>
 
-          <div class="flex flex-wrap gap-4">
-            <WishlistButton :product />
-            <ShareButton :product />
-          </div>
+<!--          <div class="flex flex-wrap gap-4">-->
+<!--            <ShareButton :product />-->
+<!--          </div>-->
         </div>
       </div>
-      <div v-if="product.description || product.reviews" class="my-32">
-        <ProductTabs :product />
-      </div>
+<!--      <div v-if="product.description || product.reviews" class="my-32">-->
+<!--        <ProductTabs :product />-->
+<!--      </div>-->
     </div>
   </main>
 </template>
